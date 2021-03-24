@@ -1,13 +1,24 @@
-__pycache__
-bindings
-build
-contrib
-doc
-examples
-src
-testpy-output
-utils
-waf-tools
+# 将NS3框架原本文件忽略掉，不纳入git
+# 所有自己开发的代码都应带有 “cs-” 前缀，否则会被忽略掉
+
+# 反选规则。将自己的代码保留出来自己的代码全部需要带“cs-”前缀
+!scratch/cs-*
+!src/applications/helper/cs-*
+!src/applications/model/cs-*
+!scratch/cs-test
+
+# 原NS3框架所有目录、文件，及使用过程中产生的文件
+__pycache__/
+bindings/
+build/
+contrib/
+doc/
+examples/
+scratch/
+src/
+testpy-output/
+utils/
+waf-tools/
 AUTHORS
 CHANGES.html
 CONTRIBUTING.md
@@ -23,3 +34,8 @@ waf
 waf.bat
 wscript
 wutils.py
+.waf*
+.lock-waf*
+
+
+# .vscode内包含的文件 用于使用VSCode开发调试程序
