@@ -1,5 +1,5 @@
 #include "ns3/core-module.h" 
-#include "network-helper.h"
+#include "cs-network-helper.h"
 #include "ns3/string.h"
 #include "ns3/inet-socket-address.h"
 #include "ns3/names.h"
@@ -8,9 +8,9 @@
 #include "ns3/applications-module.h"
 
 // 2.need changed to the the specific header file
-#include "../model/raft-node.h"
-// #include "../model/paxos-node.h"
-// #include "../model/pbft-node.h"
+#include "../model/cs-raft-node.h"
+// #include "../model/cs-paxos-node.h"
+// #include "../model/cs-pbft-node.h"
 
 namespace ns3 {
     NetworkHelper::NetworkHelper(uint32_t totalNoNodes) {

@@ -38,6 +38,7 @@ wscript
 wutils.py
 .waf*
 .lock-waf*
+.idea
 
 
 # 反选规则。必须放在忽略规则之后，并且忽略规则不能将目录给忽略了

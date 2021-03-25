@@ -14,10 +14,11 @@
 #include "ns3/tcp-socket-factory.h"
 #include "ns3/uinteger.h"
 #include "ns3/double.h"
-#include "paxos-node.h"
 #include "stdlib.h"
 #include "ns3/ipv4.h"
 #include <map>
+
+#include "cs-paxos-node.h"
 
 namespace ns3 {
 

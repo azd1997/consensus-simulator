@@ -14,11 +14,12 @@
 #include "ns3/tcp-socket-factory.h"
 #include "ns3/uinteger.h"
 #include "ns3/double.h"
-#include "pbft-node.h"
 #include "stdlib.h"
 #include "ns3/ipv4.h"
 #include <ctime>
 #include <map>
+
+#include "cs-pbft-node.h"
 
 // 全局变量 是所有节点间共用的
 int tx_size;

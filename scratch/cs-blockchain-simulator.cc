@@ -22,7 +22,7 @@ void startSimulator (int N)
   // 节点总带宽24Mbps，分到每一个点对点通道上为3Mbps
   pointToPoint.SetDeviceAttribute ("DataRate", StringValue ("3Mbps"));
   pointToPoint.SetChannelAttribute ("Delay", StringValue ("3ms"));
-  uint32_t nNodes = nodes.GetN ();
+  //uint32_t nNodes = nodes.GetN ();
 
   InternetStackHelper stack;
   stack.Install (nodes);
